@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(17, 14, 28);
+  margin: 60px;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.card-holder {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  justify-content: center;
+}
+
+
+button {
+  width: 100px;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: darkslateblue;
+  color: white;
+}
+
+.button-holder {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+
+#countdown-timer {
+  color: white;
+}
+
+
+.card-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  height: 120px;
+  background-color: blueviolet;
+  border: 2px solid gold;
+  margin: 12px;
+  font-size: 30px;
+  user-select: none;
+}
+
+.card-div[data-card]::before {
+    content: attr(data-card);
+    display: none; /* Initially hide the card data */
+  }
+
+.flipped.matched {
+  background-color: cornflowerblue;
+}
+
+.flipped {
+  background-color: rgb(157, 76, 233);
+}
